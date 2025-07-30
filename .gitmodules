@@ -1,0 +1,3 @@
+[submodule "packages/core/externals/CubismWebFramework"]
+	path = packages/core/externals/CubismWebFramework
+	url = https://github.com/Unititled-Story/CubismWebFramework.git

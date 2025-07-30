@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "pixi-live2d-display-neo": "workspace: *",
+    "pixi.js": "^8.11.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "pixi-live2d-display-neo",
+  "version": "0.0.0",
+  "dependencies": {
+    "pixi.js": "^8.11.0"
+  },
+  "peerDependencies": {
+    "pixi.js": "^8.11.0"
+  }
+}
