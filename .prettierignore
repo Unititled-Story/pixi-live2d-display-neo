@@ -1,3 +1,4 @@
 node_modules/
 packages/core/externals/CubismWebFramework/
 **/*.min.js
+pnpm-lock.yaml

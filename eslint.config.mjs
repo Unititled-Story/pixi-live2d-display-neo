@@ -1,16 +1,15 @@
-import { defineConfig } from 'eslint/config'
+import tsEslint from 'typescript-eslint'
+import eslint from '@eslint/js'
+import prettierPluginRecommended from 'eslint-plugin-prettier/recommended'
 
-export default defineConfig({
-  root: true,
-  env: { browser: true, es2024: true },
-  parser: '@typescript-eslint/parser',
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
-  rules: {
-    '@typescript-eslint/no-unused-vars': 'warn',
-    'prettier/prettier': 'warn'
+export default tsEslint.config(
+  eslint.configs.recommended,
+  tsEslint.configs.recommended,
+  prettierPluginRecommended,
+  {
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+      'prettier/prettier': 'warn'
+    }
   }
-})
+)
